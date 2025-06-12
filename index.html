@@ -3,56 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo Maquinários</title> 
-
+    <title>Campo Maquinários do Paraná</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>Campo Maquinários<h1>
-
-    <p> Seu portal sobre máquinas agrícolas, da construção e industriais</p>
-
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Campo Maquinários do Paraná</h1>
+            <p>Qualidade e Tecnologia em Máquinas</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-<p> Bem-vindo ao Campo Maquinários, seu portal completo sobre maquinários agrícolas. Aqui você encontra análises, divcas, comparativos e as últimas novidades do setor.</p>
-<section id="sobre"> 
-<h2> Sobre Nós </h2>
-<p> somos especializados em oferecer informações e soluções sobre maquinários agrícolas, da contrução civil e industriais. Nosso objetivo é conectar profissionais do setor com as melhores opções do mercado.</p> 
-</section>
-<section id="serviços"> 
-    <h2> Serviços </h2>
-    <ul> 
-        <li> Notícias e atualizações sobre o setor </li>
-        <li> Catálogo de equipamento</li>
-        <li> Dicas de manutenção </li>
-        <li> Parcerias com fornecedores</li>
-    </ul>
-</section>
-<section id="produtos"
-<h2> Galeria de Maquinas</h2> 
-<img src="imagens/trator.jpg" alt="Trator agrícola" width="300">
-<img src="imagens/escavadeira.jpg" alt=" escavadeira" width="300">
-<img src="imagens/colheitadeira.jpg" alt="colheitadeira" width="300">
-</section>
-<section id="contato"> 
-<h2>contato</h2>
-<form> 
-<label for="nome">Nome:</label><br>
-<input type="text" id="nome" name="nome"><br>
 
-<label for="email"> Email:</label><br>
-<input type="email" id="email" name="email"><br>
+    <!-- Seção Home -->
+    <section id="home" class="section">
+        <h2>Bem-vindo à Campo Maquinários do Paraná</h2>
+        <p>Oferecemos as melhores soluções em maquinários agrícolas e industriais, com qualidade e excelência no atendimento.</p>
+    </section>
 
-<label for="mensagem">mensagem:</label><br>
-<textarea id="mensagem" name="mensagem"></textarea><br>
+    <!-- Seção Produtos -->
+    <section id="produtos" class="section">
+        <h2>Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="produto1.jpg" alt="Trator" />
+                <h3>Tratores</h3>
+                <p>Tratores de última geração para otimizar o trabalho no campo.</p>
+            </div>
+            <div class="produto">
+                <img src="produto2.jpg" alt="Colheitadeira" />
+                <h3>Colheitadeiras</h3>
+                <p>Máquinas potentes para uma colheita eficiente.</p>
+            </div>
+            <div class="produto">
+                <img src="produto3.jpg" alt="Plantadeira" />
+                <h3>Plantadeiras</h3>
+                <p>Plantadeiras modernas para uma semeadura precisa e rápida.</p>
+            </div>
+        </div>
+    </section>
 
-<button type="submit"> enviar </button>
-</form>
-</section>
-<footer> 
-    <p> &copy; 2025 Campo Maquinários. Todos os dias reservados.</p>
-</footer>
-   <img src="imagens/trato.jpg" alt="trator agrícola" width="300"> 
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações ou orçamentos.</p>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Campo Maquinários do Paraná - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
