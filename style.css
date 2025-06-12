@@ -1,96 +1,161 @@
-body { 
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    }
-    header { 
-        background-color: #2e8b57;
-        color: whire;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {background-color: #eee;
-    padding:10px;
-text-aling: center;
-}
-nav input[type="text] { 
-width:50%;
-padding: 8px;
-}
-section { 
-    padding: 20px;
-}
-categorias {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-categoria { 
-    background-color: white;
-    padding: 15px;
-    boder-radius: 10px;
-    box-shadow: 0 0 5px
-rgba(0,0,0,0.1);
-text-align: center;
-width: 30%;
-}
-artigos { 
-    margin-top:30px;
-}
-artigos div { 
-    background-color: #53c70b;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-left: 5px solid #2e8b57;
-}
-footer { 
-    background-color: #2e8b57;
-    color: rgb(13, 198, 7);
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px
-}
-body { 
+/* Definindo a cor de fundo detalhada e a imagem */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('campo-maquinarios.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     line-height: 1.6;
-    background-color: #36cd08;
-    color: #333;
-
 }
 
-header { 
-    background-color: #36cd08;
-    color: white;
-    padding: 30px;
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.6); /* Fundo escuro para destacar o texto */
+    padding: 20px;
     text-align: center;
 }
 
-section { background-color: white;
-margin: 20px auto; 
-padding: 20px;
-max-width: 800px;
-box-shadow: 0 0 10px rgb( 0, 0, 0, 0.1);
-border-radius: 8px; 
+header .logo h1 {
+    font-size: 3rem;
+    margin: 0;
 }
-h1, h2 { color: #2e8b57
+
+header .logo p {
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
-form input, form textarea { 
-width: 100%;
-padding: 10px;
-margin-bottom: 15px;
-border: 1px solid #ccc;
-border-radius: 4px;
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
-form button, form input[ type="submit"] { 
-background-color: #2e8b57;
-color: white;
-padding: 10px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-form button: hover{ 
-    background-color: #246c45;
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00b33c;
+}
+
+/* Seção Home */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 120px 20px;
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Seção Produtos */
+#produtos {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 20px;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 1rem;
+}
+
+/* Seção Contato */
+#contato {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #00b33c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: #009933;
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
 }
